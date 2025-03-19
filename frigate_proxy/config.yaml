@@ -1,22 +1,22 @@
 name: Frigate Proxy
 version: "1.5"
 panel_icon: "mdi:cctv"
-panel_title: Frigate
-slug: frigate-proxy
-description: Proxy addon for Frigate
+panel_title: Immich
+slug: immich-proxy
+description: Proxy addon for Frigatimmiche
 url: "https://github.com/blakeblackshear/frigate"
 startup: application
 boot: auto
-webui: "http://[HOST]:[PORT:5000]/"
-watchdog: "http://[HOST]:[PORT:5000]/"
+webui: "http://[HOST]:[PORT:2283]/"
+watchdog: "http://[HOST]:[PORT:2283]/"
 ingress: true
-ingress_port: 5000
+ingress_port: 2283
 ingress_entry: /
 panel_admin: false
 ports:
-  5000/tcp: 5000
+  2283/tcp: 2283
 ports_description:
-  5000/tcp: Web interface (Not required for Hass.io Ingress)
+  2284/tcp: Web interface (Not required for Hass.io Ingress)
 host_network: false
 devices: []
 usb: false
@@ -24,7 +24,7 @@ tmpfs: false
 full_access: false
 environment: {}
 options:
-  server: "http://frigate.local:5000"
+  server: "http://192.168.1.200:2283"
   proxy_pass_host: true
   proxy_pass_real_ip: true
 schema:
