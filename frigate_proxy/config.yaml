@@ -1,9 +1,9 @@
-name: Frigate Proxy
+name: Immich Proxy
 version: "1.5"
 panel_icon: "mdi:cctv"
 panel_title: Immich
 slug: immich-proxy
-description: Proxy addon for Frigatimmiche
+description: Proxy addon for Immich
 url: "https://github.com/blakeblackshear/frigate"
 startup: application
 boot: auto
